@@ -18,6 +18,7 @@ AddProject(openVrPlugin
   GITHUB antodld/mc_OpenVR_plugin
   GIT_TAG origin/main
   DEPENDS mc_rtc openvr
+  CMAKE_ARGS -DBUILD_TESTING:BOOL=OFF
 )
 
 AddProject(joystickPlugin
