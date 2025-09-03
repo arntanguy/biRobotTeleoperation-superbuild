@@ -27,7 +27,7 @@ AddProject(joystickPlugin
 )
 
 AddProject(contact_estimation
-  GITHUB antodld/mc_contact_estimation
+  GITHUB arntanguy/mc_contact_estimation
   GIT_TAG origin/main
   DEPENDS mc_rtc
 )
