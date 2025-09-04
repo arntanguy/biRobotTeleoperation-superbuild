@@ -33,16 +33,16 @@ AddProject(contact_estimation
   DEPENDS mc_rtc
 )
 
-AddProject(puppet
-  GITHUB antodld/mc_puppet
-  GIT_TAG origin/main
-  DEPENDS mc_rtc
-)
-
 AddCatkinProject(puppet_description
   GITHUB antodld/puppet_description
   GIT_TAG origin/main
   WORKSPACE data_ws
+)
+
+AddProject(puppet
+  GITHUB antodld/mc_puppet
+  GIT_TAG origin/main
+  DEPENDS mc_rtc puppet_description
 )
 
 AddProject(mc_biRobotTeleop
