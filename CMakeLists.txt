@@ -1,11 +1,14 @@
 AddProject(biRobotTeleop_utils
-  GITHUB antodld/biRobotTeleopTask
-  GIT_TAG origin/main
+  # GITHUB antodld/biRobotTeleopTask
+  GITHUB arntanguy/biRobotTeleopTask
+  # GIT_TAG origin/main
+  GIT_TAG origin/topic/Upgrade
   DEPENDS mc_rtc
 )
 
 AddProject(UDPDataLink
   GITHUB antodld/UDPDataLink
+  # GITHUB arntanguy/UDPDataLink
   GIT_TAG origin/main
 )
 
@@ -66,3 +69,9 @@ AddProject(mc_human
   DEPENDS human_description mc_rtc
 )
 
+AddProject(mc_robot_model_update
+  GITHUB arntanguy/mc_robot_model_update
+  GIT_TAG origin/topic/BiRobotTeleop
+  DEPENDS mc_rtc
+  SKIP_TEST
+)
